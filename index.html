@@ -55,13 +55,13 @@ button{font-family:inherit}
 .callb svg{width:20px;height:20px;stroke:#fff;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .li .l{display:flex;align-items:center;gap:12px}
 /* home */
-.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}.tile.wide{grid-column:1/-1}
 .tile{background:var(--card);border-radius:8px;padding:14px 6px;text-align:center;box-shadow:0 6px 18px rgba(0,0,0,.18)}
 .tile .ico{margin:0 auto 8px}.tile .lb{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
 .tile b{display:block;font:600 21px "Jost",system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink)}.tile i{font-style:normal;font-size:11px;color:var(--mut)}
 .cta{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;border:0;background:var(--brand);color:#fff;text-decoration:none;font:500 16px "Jost",system-ui,-apple-system,"Segoe UI",sans-serif;padding:16px;border-radius:8px;min-height:54px;box-shadow:0 6px 16px rgba(40,30,20,.35);margin-bottom:14px}
 .cta svg{width:21px;height:21px;stroke:#fff;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.cta.wa{background:#1f8f4e;box-shadow:0 6px 16px rgba(31,143,78,.45);margin-top:-4px}
+.cta.wa{background:#1f8f4e;box-shadow:0 6px 16px rgba(31,143,78,.45);}
 .go{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .go button{border:0;background:var(--card);border-radius:8px;padding:14px;text-align:left;display:flex;flex-direction:column;gap:10px;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.18);font-weight:500;font-size:14.5px;color:var(--ink)}
 .note{background:rgba(36,29,23,.88);color:#f6efe6;border-radius:8px;padding:16px 18px;margin:4px 0 14px;backdrop-filter:blur(6px)}
@@ -132,7 +132,7 @@ es:{tabs:{home:"Inicio",cons:"Consumos",lav:"Lavandería",tel:"Teléfonos"},
  tarta:"Vianda",tartad:"Tarta individual, agua 500 ml, fruta y snack dulce",desa2:"Desayuno",
  lt:"Lavandería",ls:"Lavado y planchado",
  lav:{saco:"Saco",pant:"Pantalones",vest:"Vestido",pull:"Pullover",cami:"Camisa",blus:"Blusa",seda:"Camisa de seda",rem:"Remera",pij:"Pijama",short:"Pantalón corto",falda:"Falda",medias:"Medias",calz:"Calzoncillos",sost:"Sostén",pan:"Pañuelo"},
- l24:"Sus prendas, listas en 24 horas",ltxt:"Complete el listado que está junto a la bolsa. Si lo desea, avise a Recepción y retiramos la bolsa de inmediato.",
+ l24:"Sus prendas, listas en 24 horas",ltxt:"Solicite el formulario de lavandería en Recepción.",
  tt:"Telefonía",ts:"Precio por minuto",local:"Local",nac:"Nacional",int:"Internacional",cel:"Celulares",
  ints:"Internos",ints2:"Desde su habitación",recp:"Recepción",ext:"Línea externa",wake:"Llamado de despierte",
  util:"Teléfonos útiles",combi:"Combi Aeropuerto",remis:"Remis",aer:"Aeropuerto",since:"Precios vigentes desde",res:"Reservas",go:"Ir a"},
@@ -143,7 +143,7 @@ en:{tabs:{home:"Home",cons:"Snacks",lav:"Laundry",tel:"Phones"},
  tarta:"Lunch box",tartad:"Individual tart, water 500 ml, fruit and sweet snack",desa2:"Breakfast",
  lt:"Laundry",ls:"Washing & ironing",
  lav:{saco:"Coat / jacket",pant:"Trousers",vest:"Dress",pull:"Pullover",cami:"Shirt",blus:"Blouse",seda:"Silk shirt",rem:"T-shirt",pij:"Pyjamas",short:"Shorts",falda:"Skirt",medias:"Socks",calz:"Underwear",sost:"Bra",pan:"Handkerchief"},
- l24:"Your clothes, ready within 24 hours",ltxt:"Please fill in the leaflet next to the bag. To have it collected right away, call Reception.",
+ l24:"Your clothes, ready within 24 hours",ltxt:"Please ask Reception for the laundry form.",
  tt:"Telephone",ts:"Rate per minute",local:"Local",nac:"National",int:"International",cel:"Mobiles",
  ints:"Extensions",ints2:"From your room",recp:"Reception",ext:"Outside line",wake:"Wake-up call",
  util:"Useful numbers",combi:"Van to airport",remis:"Taxi (remis)",aer:"Airport",since:"Prices valid since",res:"Reservations",go:"Go to"},
@@ -154,7 +154,7 @@ pt:{tabs:{home:"Início",cons:"Consumo",lav:"Lavanderia",tel:"Telefones"},
  tarta:"Lanche para levar",tartad:"Torta individual, água 500 ml, fruta e snack doce",desa2:"Café da manhã",
  lt:"Lavanderia",ls:"Lavagem e passadoria",
  lav:{saco:"Paletó / casaco",pant:"Calças",vest:"Vestido",pull:"Pulôver",cami:"Camisa",blus:"Blusa",seda:"Camisa de seda",rem:"Camiseta",pij:"Pijama",short:"Bermuda",falda:"Saia",medias:"Meias",calz:"Cueca",sost:"Sutiã",pan:"Lenço"},
- l24:"Suas roupas prontas em 24 horas",ltxt:"Preencha a lista que está junto ao saco. Se preferir, avise a Recepção e retiraremos o saco imediatamente.",
+ l24:"Suas roupas prontas em 24 horas",ltxt:"Solicite o formulário de lavanderia na Recepção.",
  tt:"Telefonia",ts:"Preço por minuto",local:"Local",nac:"Nacional",int:"Internacional",cel:"Celulares",
  ints:"Ramais",ints2:"Do seu quarto",recp:"Recepção",ext:"Linha externa",wake:"Despertador",
  util:"Telefones úteis",combi:"Van do aeroporto",remis:"Táxi (remis)",aer:"Aeroporto",since:"",res:"Reservas",go:"Ir para"}};
@@ -189,11 +189,10 @@ const g=(id,title,sub,body)=>`<div data-g="${id}"><div class="gh"><span>${title}
 return `
 <section class="pane" data-p="home"><div class="hero-sp"></div>
 <div class="tiles">
-<div class="tile">${ico("cup")}<span class="lb">${t.desa}</span><b>6:30</b><i>– 10:00 ${t.hs}</i></div>
+<div class="tile wide">${ico("cup")}<span class="lb">${t.desa}</span><b>6:30 – 10:00</b><i>${t.hs||"&nbsp;"}</i></div>
 <div class="tile">${ico("key")}<span class="lb">${t.ci}</span><b>14:00</b><i>${t.hs||"&nbsp;"}</i></div>
 <div class="tile">${ico("out")}<span class="lb">${t.co}</span><b>10:00</b><i>${t.hs||"&nbsp;"}</i></div></div>
 <div class="wifi">${ico("wifi")}<div class="wt"><span>${t.net}</span><b class="nn">Hotel Bahia Redonda</b><span style="margin-top:6px">${t.wifi}</span><b id="wpass">hotelbahiaredonda123</b></div><button class="cp" id="cpb" type="button" aria-label="${t.copy}">${S(I.copy)}</button></div>
-<a class="cta" href="tel:+542902491743">${S(I.tel)}${t.call} · 200</a>
 <a class="cta wa" href="https://wa.me/5492966254347" target="_blank" rel="noopener">${S(I.wa)}${t.wa}</a>
 <div class="go"><button data-go="cons">${ico("cons")}${t.tabs.cons}</button><button data-go="lav">${ico("lav")}${t.tabs.lav}</button>
 <button data-go="tel">${ico("tel")}${t.tabs.tel}</button><button data-go="cons" data-ch="v">${ico("box")}${t.v}</button></div></section>
@@ -210,8 +209,6 @@ ${g("v",t.v,t.vs,`<div class="grid">${item("box",t.tarta,P.viandas.tarta,t.tarta
 <div class="list">${[["local"],["nac"],["int"],["cel"]].map(([k])=>li("tel",t[k],`<b>${$(P.tel[k])}</b>`)).join("")}</div>
 <div class="gh"><span>${t.ints}</span><small>${t.ints2}</small></div>
 <div class="list">${li("ext",t.recp,"<b>200</b>")}${li("wa",`WhatsApp<small style="display:block;color:var(--mut);font-size:12.5px;font-weight:300">+54 9 2966 25-4347</small>`,`<a class="callb" style="border-color:#083a20" href="https://wa.me/5492966254347" target="_blank" rel="noopener" aria-label="WhatsApp">${S(I.wa)}</a>`)}${li("ext",t.ext,"<b>0</b>")}${li("clock",t.wake,"<b>200</b>")}</div>
-<div class="gh"><span>${t.util}</span></div>
-<div class="list">${li("car",t.combi,`<b>494355</b>${call("+542902494355")}`)}${li("car",t.remis,`<b>491745</b>${call("+542902491745")}`)}${li("plane",t.aer,`<b>491229</b>${call("+542902491229")}`)}</div>
 <div class="addr">${t.res}: <a href="tel:+542901436100">(02901) 436100</a> · <a href="mailto:reservas@bahiaredondahotel.com">reservas@bahiaredondahotel.com</a></div></section>`;}
 function copyPass(){const t=T[LANG],p="hotelbahiaredonda123",b=document.getElementById("cpb");
 const old=b.innerHTML;const ok=()=>{b.innerHTML='<svg viewBox="0 0 24 24"><path d="M5 12.500l4.500 4.500L19 7.500"/></svg>';b.setAttribute("aria-label",t.copied);setTimeout(()=>{b.innerHTML=old;b.setAttribute("aria-label",t.copy)},1800)};
